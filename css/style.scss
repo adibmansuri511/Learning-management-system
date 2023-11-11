@@ -5,6 +5,16 @@ $primary1: #00bbf0;
 $primary2: #00204a;
 $textCol: #1f1f1f;
 
+// My custom colors
+$am_title: #164863;
+$am_primary1: #9BBEC8;
+$am_primary2: #164863;
+$am_btn_primary1: #81b6c5;
+$am_btn_primary2: #65aec2;
+$am_bg_col: #c0d3d9;
+$am_card_btn_dark: #164863;
+$am_card_btn_light: #2087a3;
+
 // import fonts - font-family: 'Open Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
@@ -24,7 +34,7 @@ $textCol: #1f1f1f;
   border: none;
 
   &:hover {
-    background-color: darken($color: $col1, $amount: 15);
+    background-color: darken($color: $am_btn_primary2, $amount: 15);
   }
 }
 
@@ -69,19 +79,28 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  h2 {
+  h1 {
     position: relative;
     font-weight: bold;
     margin-bottom: 0;
-
-    span {
-      color: $primary1;
+    // span {
+      //   color: $am_title;
+      // }
     }
-  }
+    
+    .dark_title{
+      color: $am_title;
+    }
+    .light_title{
+      color: $white;
+    }
 
   p {
     margin-top: 10px;
     margin-bottom: 0;
+    font-size: 20px;
+    word-spacing: 1px;
+    // letter-spacing: 1px;
   }
 
   &.heading_center {
@@ -127,8 +146,9 @@ a:focus {
     z-index: -1;
 
     .bg_img_box {
-      min-width: 100%;
-      min-height: 100%;
+      // min-width: 100%;
+      height: 100%;
+      width: 100%;
     }
 
     img {
@@ -154,9 +174,9 @@ a:focus {
   padding: 10px 0;
   background: linear-gradient(130deg, #9BBEC8, #164863);
   position: sticky !important;
-  position: -webkit-sticky;
+  // position: -webkit-sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
 
   .container-fluid {
     padding-right: 25px;
@@ -175,31 +195,16 @@ a:focus {
     font-size: 42px;
     color: #164863;
     vertical-align: middle;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .navbar-brand {
-    img{
-      // object-fit: cover;
-      height: 70px;
-      width: 70px;
-    }
-    span {
-      font-weight: 800;
-      font-size: 36px;
-      color: #164863;
-      vertical-align: middle;
-      margin-left: -10px;
-    }
+    margin-left: -15px;
   }
 }
 
 .custom_nav-container {
-  padding: 0;
+  padding: 0px;
 
   .navbar-nav {
-    margin-left: auto;
+    // margin-left: auto;
+    margin: auto;
 
     .nav-item {
       .nav-link {
@@ -223,6 +228,9 @@ a:focus {
           font-weight: 600;
         }
       }
+    }
+    .form-inline{
+      justify-content: center;
     }
   }
 }
@@ -305,7 +313,8 @@ a:focus {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 45px 0 145px 0;
+  background-color: #00000061;
+  padding: 0px 0 30px 0;
 
   .row {
     align-items: center;
@@ -322,14 +331,16 @@ a:focus {
     h1 {
       font-size: 3rem;
       font-weight: bold;
-      text-transform: uppercase;
+      text-transform: capitalize;
       margin-bottom: 15px;
       color: $white;
     }
 
     p {
       color: #fefefe;
-      font-size: 14px;
+      font-size: 18px;
+      word-spacing: 2px;
+      letter-spacing: 1px;
     }
 
     .btn-box {
@@ -344,7 +355,7 @@ a:focus {
       }
 
       .btn1 {
-        @include hero_btn($primary1, $white, 10px, 15px, 0);
+        @include hero_btn($am_btn_primary1, $white, 10px, 15px, 5px);
       }
 
       .btn2 {
@@ -358,6 +369,8 @@ a:focus {
 
     img {
       width: 100%;
+      border-radius: 50px;
+      box-shadow: 10px 10px 20px rgb(255 255 255);
       animation: upDown 5s infinite;
     }
 
@@ -393,7 +406,7 @@ a:focus {
       &.active {
         width: 20px;
         height: 20px;
-        background-color: $primary1;
+        background-color: $am_primary1;
       }
     }
   }
@@ -405,6 +418,7 @@ a:focus {
 
 .service_section {
   position: relative;
+  background-color: $am_bg_col;
 
   .box {
     display: flex;
@@ -412,9 +426,13 @@ a:focus {
     align-items: center;
     text-align: center;
     margin-top: 45px;
-    background-color: #f8f8f9;
+    background-color: #65aec2;
+    color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px -8px $am_title;
+    height: 400px;
+    position: relative;
 
     .img-box {
       display: flex;
@@ -422,8 +440,8 @@ a:focus {
       align-items: flex-start;
       width: 125px;
       min-width: 75px;
-      height: 75px;
-      margin-bottom: 15px;
+      // height: 60px;
+      margin: 15px 0px;
 
       img {
         max-width: 100%;
@@ -435,15 +453,27 @@ a:focus {
     .detail-box {
       h5 {
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        line-height: 30px;
       }
 
+      p{
+        text-align: justify;
+      }
       a {
-        color: $primary2;
+        color: #ffffff;
         font-weight: 600;
+        background-color: $am_card_btn_light;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 89%;
+        line-height: 40px;
+        border-radius: 10px;
 
         &:hover {
-          color: $primary1;
+          // color: $am_card_btn_light;
+          background-color: $am_card_btn_dark;
         }
       }
     }
@@ -455,9 +485,23 @@ a:focus {
     justify-content: center;
     margin-top: 45px;
 
-    a {
-      @include hero_btn($primary1, $white, 10px, 45px, 0);
+    // a {
+    //   @include hero_btn($primary1, $white, 10px, 45px, 0);
+    // }
+    a{
+      display: inline-block;
+      padding: 10px 45px;
+      background-color: $am_card_btn_light;
+      color: $white;
+      border-radius: 10px;
+      transition: all 0.3s;
+      border: none;
+
+      &:hover {
+        background-color: $am_card_btn_dark;
+      }
     }
+
   }
 }
 
