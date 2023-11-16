@@ -38,6 +38,10 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
 </head>
 
 <body>
@@ -105,13 +109,11 @@
   <!-- end header section -->
 
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <div class="bg_img_box">
         <img src="images/datascience.jpg" alt="">
       </div>
     </div>
-
 
     <!-- slider section -->
     <section class="slider_section ">
@@ -211,10 +213,10 @@
           <li data-target="#customCarousel1" data-slide-to="2"></li>
         </ol>
       </div>
-
     </section>
-    <!-- end slider section -->
   </div>
+
+  <!-- end slider section -->
 
 
   <!-- service section -->
@@ -308,35 +310,57 @@
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="heading_container heading_center">
-        <h1>
-          About <span>Us</span>
+        <h1 class="light_title">
+          About Us
         </h1>
         <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum
-          voluptatibus
+          Welcome to Brainster, where we harness the power of data to drive insights, innovation, and informed
+          decision-making. Our passion lies in the field of data science, a dynamic discipline that empowers
+          organizations to extract meaningful patterns from vast datasets, unlocking valuable knowledge.
         </p>
       </div>
       <div class="row">
         <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+          <div class="video-box">
+            <iframe width="555px" height="300px" src="https://www.youtube.com/embed/jtn-hRJjl68?si=CJcgrPEjWEDAAIEg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <!-- <img src="images/about-img.png" alt=""> -->
           </div>
+          <!-- <div>
+            <video width="320" height="240" autoplay muted controls>
+              <source src="https://youtu.be/_xPVpUQjpkw?si=addaVB6L_ZF-zpxB" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div> -->
         </div>
         <div class="col-md-6">
           <div class="detail-box">
-            <h3>
-              We Are Finexo
+            <h3 class="pt-2">
+              Our Mission
             </h3>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              At Brainster, our mission is to demystify the world of data and make it accessible to everyone.
+              We believe that data is a powerful tool that, when wielded effectively, can transform industries, solve
+              complex problems, and improve lives. Through our expertise in data science, we aim to bridge the gap
+              between data and actionable insights.
             </p>
-            <p>
-              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste
-              corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
-            </p>
+
+            <h4>What Sets Us Apart</h4>
+            <ul>
+              <li><b>Expertise : </b> Our team comprises skilled data scientists, analysts, and experts who bring a
+                wealth of experience in turning raw data into actionable intelligence.</li>
+            </ul>
+            <ul>
+              <li><b>Innovation : </b> We thrive on innovation and continuously explore cutting-edge technologies and
+                methodologies to stay at the forefront of the ever-evolving field of data science.</li>
+            </ul>
+            <ul>
+              <li><b>Client-Centric Approach : </b> We understand that every client is unique. Our solutions are
+                tailored to meet your specific needs, ensuring that you get the most value from your data.</li>
+            </ul>
+
             <a href="">
               Read More
             </a>
@@ -350,7 +374,7 @@
 
   <!-- why section -->
 
-  <section class="why_section layout_padding">
+  <!-- <section class="why_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h1>
@@ -433,9 +457,195 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end why section -->
+
+  <!-- Custom why section -->
+
+  <section class="am_why_section  layout_padding">
+    <div class="container">
+      <!-- Start Heading for why section -->
+      <div class="row why_choose_us_title">
+        <div class="col-md-3"></div>
+        <div class="col-sm-12 col-md-6 light_title">
+          <h1>Why Choose Us</h1>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- End Heading for why section -->
+
+      <!-- Start Content for why section -->
+      <!-- Start 1-Slide -->
+      <div class="row why_choose_us_content p-4 mt-4">
+        <div class="col-md-3">
+          <img src="images/why-choose-us/2x-faster-career-growth.webp" alt="">
+        </div>
+        <div class="col-md-9">
+          <h2 class="mt-4 mt-md-0">2x Faster Career Growth</h2>
+          <p class="mt-3">
+            We have a participative and activity-based learning mechanism to help you master the most in-demand skills
+            that most of the top companies are looking for.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Assured mentor review sessions</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Doubt-solving sessions</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Separate instructor to guide you</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">1:1 Mentorship</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End 1-Slide -->
+
+      <!-- Start 2-Slide -->
+      <div class="row why_choose_us_content p-4 mt-4" style="background: linear-gradient(130deg, #164863, #9BBEC8);">
+        <div class="col-md-9">
+          <h2>Industry Exposure</h2>
+          <p class="mt-3">
+            You will have an immersive learning experience as you get hands-on exposure to industry-relevant live
+            projects related to the curriculum you select.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Hands-On Experience on Real-World Projects by Experts</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Cutting-edge Curriculum According to the Need of the Industry</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Industry-Focused Capstone Projects under Instructor</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Regular Interaction with Industry Leaders, Professionals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4 mt-md-0">
+          <img src="images/why-choose-us/industry-xposure.webp" alt="">
+        </div>
+      </div>
+      <!-- End 2-Slide -->
+
+      <!-- Start 3-Slide -->
+      <div class="row why_choose_us_content p-4 mt-4">
+        <div class="col-md-3">
+          <img src="images/why-choose-us/100-job-assistance.webp" alt="">
+        </div>
+        <div class="col-md-9">
+          <h2 class="mt-4 mt-md-0">100% Job Assistance</h2>
+          <p class="mt-3">
+            There is thorough facilitation for personal mentorship, profile building, interview preparation, and
+            follow-up after the successful completion of the course.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">360-degree career support</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Job portal option after completion of training</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Exclusive interview preparation by Industry Experts</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">24/7 Access to the LMS portal with integrated teaching assistance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End 3-Slide -->
+
+      <!-- Start 4-Slide -->
+      <div class="row why_choose_us_content p-4 mt-4" style="background: linear-gradient(130deg, #164863, #9BBEC8);">
+        <div class="col-md-9">
+          <h2>Get Industry-ready</h2>
+          <p class="mt-3">
+            With all the necessary Hands-On exposure and work on Real-World Datasets, you can master the skills that
+            make you industry ready and help you future-proof your career.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Participative and Activity-Based Learning Mechanism</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Practice on Live Projects, Assignments, and Case Studies</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Distinctive Support for Non-Technical Learners</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <div class="d-flex justify-content-start align-items-baseline">
+                <i class="fa fa-check-circle fa-lg mr-2" aria-hidden="true"></i>
+                <p class="m-0">Technical Support Team to Guide for Technical Queries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4 mt-md-0">
+          <img src="images/why-choose-us/get-industry-ready.webp" alt="">
+        </div>
+      </div>
+      <!-- End 4-Slide -->
+      <!-- End Content for why section -->
+    </div>
+
+  </section>
+
+  <!-- End custom why section -->
+
 
   <!-- team section -->
   <section class="team_section layout_padding">
