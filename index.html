@@ -35,17 +35,14 @@
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
 </head>
 
 <body>
-  <!-- header section strats -->
+  <!-- Start Header Section -->
   <header class="header_section">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -60,17 +57,20 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  ">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About</a>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
             </li>
 
             <!-- We add dropdown menus -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Explore
               </a>
@@ -93,7 +93,8 @@
               <a class="nav-link" href="team.html">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#login-id"><i class="fa fa-user"
+                  aria-hidden="true"></i> Login</a>
             </li>
             <form class="form-inline">
               <input type="search" class="form-control" name="" id="" placeholder="Search">
@@ -106,7 +107,7 @@
       </nav>
     </div>
   </header>
-  <!-- end header section -->
+  <!-- End Header Section -->
 
   <div class="hero_area">
     <div class="hero_bg_box">
@@ -220,7 +221,6 @@
 
 
   <!-- service section -->
-
   <section class="service_section layout_padding">
     <div class="service_container">
       <div class="container ">
@@ -246,7 +246,7 @@
                   Data science is the field that involves extracting insights and knowledge from data using a
                   combination of statistical, mathematical, and programming methods.
                 </p>
-                <a href="">
+                <a href="service.html">
                   Read More
                 </a>
               </div>
@@ -266,7 +266,7 @@
                   campaigns, and enhance strategies through data-driven decision-making, focusing on user preferences
                   and marketing performance.
                 </p>
-                <a href="">
+                <a href="service.html">
                   Read More
                 </a>
               </div>
@@ -286,7 +286,7 @@
                   predictive insights. Transforming raw information into actionable intelligence through advanced
                   analytics.
                 </p>
-                <a href="">
+                <a href="service.html">
                   Read More
                 </a>
               </div>
@@ -294,19 +294,17 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="">
+          <a href="service.html">
             View All
           </a>
         </div>
       </div>
     </div>
   </section>
-
   <!-- end service section -->
 
 
   <!-- about section -->
-
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="heading_container heading_center">
@@ -361,7 +359,7 @@
                 tailored to meet your specific needs, ensuring that you get the most value from your data.</li>
             </ul>
 
-            <a href="">
+            <a href="about.html">
               Read More
             </a>
           </div>
@@ -369,11 +367,9 @@
       </div>
     </div>
   </section>
-
   <!-- end about section -->
 
   <!-- why section -->
-
   <!-- <section class="why_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -458,11 +454,9 @@
       </div>
     </div>
   </section> -->
-
   <!-- end why section -->
 
-  <!-- Custom why section -->
-
+  <!-- Start Custom why section -->
   <section class="am_why_section  layout_padding">
     <div class="container">
       <!-- Start Heading for why section -->
@@ -641,19 +635,16 @@
       <!-- End 4-Slide -->
       <!-- End Content for why section -->
     </div>
-
   </section>
-
   <!-- End custom why section -->
-
 
   <!-- team section -->
   <section class="team_section layout_padding">
     <div class="container-fluid">
       <div class="heading_container heading_center">
-        <h2 class="">
-          Our <span> Team</span>
-        </h2>
+        <h1 class="light_title">
+          Our Team
+        </h1>
       </div>
 
       <div class="team_container">
@@ -792,15 +783,13 @@
   </section>
   <!-- end team section -->
 
-
   <!-- client section -->
-
   <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
-        <h2>
-          What says our <span>Customers</span>
-        </h2>
+        <h1 class="dark_title">
+          What says our Customers
+        </h1>
       </div>
       <div class="carousel-wrap ">
         <div class="owl-carousel client_owl-carousel">
@@ -812,9 +801,9 @@
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
-                    <h6>
+                    <h5>
                       LusDen
-                    </h6>
+                    </h5>
                     <p>
                       magna aliqua. Ut
                     </p>
@@ -835,9 +824,9 @@
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
-                    <h6>
+                    <h5>
                       Zen Court
-                    </h6>
+                    </h5>
                     <p>
                       magna aliqua. Ut
                     </p>
@@ -858,9 +847,9 @@
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
-                    <h6>
+                    <h5>
                       LusDen
-                    </h6>
+                    </h5>
                     <p>
                       magna aliqua. Ut
                     </p>
@@ -881,9 +870,9 @@
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
-                    <h6>
+                    <h5>
                       Zen Court
-                    </h6>
+                    </h5>
                     <p>
                       magna aliqua. Ut
                     </p>
@@ -900,12 +889,9 @@
       </div>
     </div>
   </section>
-
   <!-- end client section -->
 
-
   <!-- info section -->
-
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -986,20 +972,21 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
+          <div class="subscribe">
+            <h4>
               Subscribe
-            </button>
-          </form>
+            </h4>
+            <form action="#">
+              <input type="email" placeholder="Enter email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- end info section -->
 
   <!-- footer section -->
@@ -1007,11 +994,99 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="https://html.design/">Adib Mansuri</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
+
+  <!-- Start Login Model -->
+  <!-- Modal -->
+  <div class="modal fade" id="login-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center mt-2 mb-3">Login to Start Your Learning Journey</h5>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary">Close</button> -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-id"
+            data-dismiss="modal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login Model -->
+
+  <!-- Start Sign Up Model -->
+  <!-- Modal -->
+  <div class="modal fade" id="sign-up-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center mt-2 mb-3">Sign Up to Start Your Learning Journey</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-6 mt-3">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="password" class="form-control" placeholder="Enter the password">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="password" class="form-control" placeholder="Conform your password">
+              </div>
+              <div class="col-md-6 mt-3">
+                <input type="tel" class="form-control" placeholder="Enter your number">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sign Up Model -->
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

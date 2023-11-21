@@ -209,7 +209,7 @@ a:focus {
 
     .nav-item {
       .nav-link {
-        padding: 5px 20px;
+        padding: 5px 15px;
         color: $white;
         text-align: center;
         text-transform: uppercase;
@@ -220,7 +220,7 @@ a:focus {
       &:hover,
       &.active {
         .nav-link {
-          color: $primary1;
+          color: $am_primary2;
         }
       }
 
@@ -687,8 +687,7 @@ a:focus {
 
 .team_section {
   text-align: center;
-  background-color: $primary2;
-  color: $white;
+  background-color: $am_bg_dark_col;
 
   .heading_container {
     justify-content: center;
@@ -699,12 +698,14 @@ a:focus {
 
     .box {
       padding: 35px 0 0 0;
-      border-radius: 5px;
+      border-radius: 15px;
       overflow: hidden;
       transition: all .1s;
       margin-top: 45px;
-      // background-color: #053068;
-      background: linear-gradient(to bottom, lighten($color: $primary2, $amount: 3), lighten($color: $primary2, $amount: 5));
+      // background-color: $am_btn_primary2;
+      // background: linear-gradient(to bottom, lighten($color: $am_btn_primary2, $amount: 3), lighten($color: $am_btn_primary2, $amount: 5));
+      background: linear-gradient(180deg, $am_btn_primary1, $am_btn_primary2);
+      box-shadow: 0px 0px 10px 2px #65aec2;
 
       .img-box {
         display: flex;
@@ -714,7 +715,7 @@ a:focus {
         img {
           width: 120px;
           border-radius: 100%;
-          border: 5px solid $white;
+          border: 5px solid $am_primary2;
         }
 
       }
@@ -723,9 +724,16 @@ a:focus {
         margin: 25px 0;
 
         h5 {
-          color: $primary1;
+          color: $white;
           font-weight: 600;
           position: relative;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+        }
+        p{
+          color: $white;
+          word-spacing: 2px;
+          letter-spacing: 1px;
         }
 
       }
@@ -740,9 +748,16 @@ a:focus {
           font-size: 22px;
 
           &:hover {
-            color: $primary1;
+            color: $am_primary2;
           }
         }
+      }
+      &:hover{
+        transition-duration: 1s;
+        transform: scale(1.05);
+        box-shadow: 0px 0px 15px 3px #65aec2;
+        transition: all .3s cubic-bezier(0,0,.5,1);
+        z-index: 1;
       }
     }
   }
@@ -755,6 +770,7 @@ a:focus {
 /* client section start */
 
 .client_section {
+  background-color: $am_bg_light_col;
   .heading_container {
     margin-bottom: 30px;
   }
@@ -773,6 +789,8 @@ a:focus {
       margin-bottom: -50px;
       margin-left: 25px;
       position: relative;
+      border: 4px solid $am_primary2;
+      border-radius: 100%;
 
       img {
         border-radius: 100%;
@@ -799,13 +817,26 @@ a:focus {
     }
 
     .detail-box {
-      background-color: $white;
+      // background-color: $am_bg_dark_col;
+      background: linear-gradient(180deg, #9BBEC8, #164863);
+      border-radius: 15px;
+      color: $white;
       box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: 0.15);
       padding: 75px 25px 25px 25px;
-
+      .client_id{
+        .client_info{
+          word-spacing: 2px;
+          letter-spacing: 1px;
+        }
+      }
       i {
-        color: $primary2;
+        color: $white;
         margin-bottom: 10px;
+      }
+      p{
+        font-size: 18px;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
       }
     }
   }
@@ -820,15 +851,17 @@ a:focus {
       .owl-next {
         width: 55px;
         height: 55px;
-        background-color: $white;
-        color: $black;
+        background-color: $am_card_btn_light;
+        color: $am_bg_light_col;
         outline: none;
         bottom: 0px;
         font-size: 24px;
         box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.25);
+        border-radius: 100%;
+        margin: 0px 10px;
 
         &:hover {
-          color: $primary2;
+          color: $am_card_btn_dark;
         }
       }
     }
@@ -839,7 +872,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: $primary2;
+  background-color: $am_bg_dark_col;
   color: $white;
   padding: 45px 0 15px 0;
 
@@ -853,6 +886,8 @@ a:focus {
   }
 
   .info_contact {
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
     .contact_link_box {
       display: flex;
       flex-direction: column;
@@ -866,7 +901,7 @@ a:focus {
         }
 
         &:hover {
-          color: $primary1;
+          color: $am_btn_primary2;
         }
       }
     }
@@ -887,50 +922,64 @@ a:focus {
       font-size: 24px;
 
       &:hover {
-        color: $primary1;
+        color: $am_btn_primary2;
       }
     }
   }
 
-  .info_links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .info_detail{
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+  }
 
-    a {
+  .info_link_box{
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    .info_links {
       display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      color: $white;
-
-      &:hover {
-        color: $primary1;
-      }
-    }
-  }
-
-  form {
-    input {
-      border: none;
-      border-bottom: 1px solid $white;
-      background-color: transparent;
-      width: 100%;
-      height: 45px;
-      color: $white;
-      outline: none;
-
-      &::placeholder {
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+      a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
         color: $white;
+  
+        &:hover {
+          color: $am_btn_primary2;
+        }
       }
     }
+  }
 
-    button {
-      width: 100%;
-      text-align: center;
-      @include hero_btn($primary1, $white, 10px, 55px, 0);
-      margin-top: 15px;
+  .subscribe{
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    form {
+      input {
+        border: none;
+        border-bottom: 1px solid $white;
+        background-color: transparent;
+        width: 100%;
+        height: 45px;
+        color: $white;
+        outline: none;
+        &::placeholder {
+          color: $white;
+        }
+      }
+
+      button {
+        width: 100%;
+        text-align: center;
+        @include hero_btn($am_btn_primary1, $white, 10px, 55px, 0);
+        margin-top: 15px;
+        border-radius: 10px;
+      }    
     }
   }
+
 }
 
 // end info section
@@ -939,11 +988,11 @@ a:focus {
 
 .footer_section {
   position: relative;
-  background-color: $white;
+  background-color: $am_bg_light_col;
   text-align: center;
 
   p {
-    color: $primary2;
+    color: $am_primary2;
     padding: 25px 0;
     margin: 0;
 
